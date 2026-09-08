@@ -1117,3 +1117,181 @@ p {
     }
 
 }
+/* =========================================
+   PROJECT PORTFOLIO
+========================================= */
+
+.project-showcase {
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.project-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 38px;
+}
+
+.project-heading h2 {
+    margin-bottom: 0;
+}
+
+.project-location {
+    color: var(--muted);
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+}
+
+.project-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    max-width: 1000px;
+    margin: 45px 0 55px;
+}
+
+.project-description p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+
+/* PHOTO GALLERY */
+
+.portfolio-gallery {
+    display: grid;
+    gap: 18px;
+}
+
+.portfolio-gallery-three {
+    grid-template-columns: 1.35fr 1fr 1fr;
+}
+
+.portfolio-gallery-four {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.portfolio-photo {
+    margin: 0;
+    overflow: hidden;
+    background: var(--soft);
+    min-height: 360px;
+}
+
+.portfolio-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    object-fit: cover;
+    transition: transform 0.45s ease;
+}
+
+.portfolio-photo:hover img {
+    transform: scale(1.025);
+}
+
+
+/* Make first Crangan Bay image more prominent */
+
+.portfolio-gallery-three .portfolio-photo:first-child {
+    min-height: 480px;
+}
+
+.portfolio-gallery-three .portfolio-photo:first-child img {
+    min-height: 480px;
+}
+
+
+/* Austral construction gallery */
+
+.portfolio-gallery-four .portfolio-photo,
+.portfolio-gallery-four .portfolio-photo img {
+    min-height: 440px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .portfolio-gallery-three {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .portfolio-gallery-three .portfolio-photo:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .project-description {
+        gap: 30px;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 780px) {
+
+    .project-showcase {
+        padding-top: 65px;
+        padding-bottom: 70px;
+    }
+
+    .project-heading {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .project-location {
+        margin-top: 12px;
+    }
+
+    .project-description {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin: 35px 0 40px;
+    }
+
+    .portfolio-gallery,
+    .portfolio-gallery-three,
+    .portfolio-gallery-four {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .portfolio-gallery-three .portfolio-photo:first-child {
+        grid-column: auto;
+    }
+
+    .portfolio-photo,
+    .portfolio-photo img,
+    .portfolio-gallery-three .portfolio-photo:first-child,
+    .portfolio-gallery-three .portfolio-photo:first-child img,
+    .portfolio-gallery-four .portfolio-photo,
+    .portfolio-gallery-four .portfolio-photo img {
+        min-height: 340px;
+        height: 340px;
+    }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 430px) {
+
+    .portfolio-photo,
+    .portfolio-photo img,
+    .portfolio-gallery-three .portfolio-photo:first-child,
+    .portfolio-gallery-three .portfolio-photo:first-child img,
+    .portfolio-gallery-four .portfolio-photo,
+    .portfolio-gallery-four .portfolio-photo img {
+        min-height: 290px;
+        height: 290px;
+    }
+}
