@@ -5,13 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Contact | SandhuDesignHome</title>
+    <title>Free Building & Civil Works Quote | SandhuDesignHome</title>
 
     <meta name="description"
-        content="Contact SandhuDesignHome for a free quote on your new residential home build or home design project in Sydney and NSW.">
+        content="Contact SandhuDesignHome for a free quote on residential construction, home design, design and build, civil works and subdivision projects across Sydney and NSW.">
 
     <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
 </head>
+
 
 <body>
 
@@ -46,39 +48,26 @@
 
             <button
                 class="menu"
-                aria-label="Menu">
+                aria-label="Menu"
+                aria-expanded="false">
                 ☰
             </button>
 
             <div class="links">
 
-                <a href="../">
-                    Home
-                </a>
+                <a href="../">Home</a>
 
-                <a href="../about/">
-                    About
-                </a>
+                <a href="../about/">About</a>
 
-                <a href="../services/">
-                    Services
-                </a>
+                <a href="../services/">Services</a>
 
-                <a href="../projects/">
-                    Projects
-                </a>
+                <a href="../projects/">Projects</a>
 
-                <a href="../process/">
-                    Our Process
-                </a>
+                <a href="../process/">Our Process</a>
 
-                <a href="../contact/">
-                    Contact
-                </a>
+                <a href="../contact/">Contact</a>
 
-                <a
-                    class="btn"
-                    href="../contact/">
+                <a class="btn" href="../contact/">
                     Get a Free Quote
                 </a>
 
@@ -100,13 +89,14 @@
             </div>
 
             <h1>
-                Let’s talk about
-                your new home.
+                Let’s talk about<br>
+                your next project.
             </h1>
 
             <p>
-                Tell us about your project and we’ll get back to you
-                to discuss the next steps.
+                Planning a new home, residential design or civil works project?
+                Tell us what you’re working on and we’ll get in touch to discuss
+                the next steps.
             </p>
 
         </div>
@@ -114,7 +104,7 @@
     </header>
 
 
-    <!-- CONTACT + FORM -->
+    <!-- CONTACT + QUOTE FORM -->
 
     <section>
 
@@ -134,9 +124,9 @@
                 </h2>
 
                 <p class="lead">
-                    Whether you’re planning your first home, a custom family
-                    home or need help with residential design, send through
-                    the details below and we’ll be in touch.
+                    Whether you’re planning a new home, custom residential
+                    project, home design or civil works for a subdivision,
+                    send through the details and we’ll be in touch.
                 </p>
 
 
@@ -268,18 +258,18 @@
                     </div>
 
 
-                    <!-- SUBURB -->
+                    <!-- PROJECT LOCATION -->
 
                     <div class="field">
 
                         <label for="suburb">
-                            Project Suburb *
+                            Project Suburb / Location *
                         </label>
 
                         <input
                             type="text"
                             id="suburb"
-                            name="Project Suburb"
+                            name="Project Location"
                             required
                             placeholder="e.g. Rouse Hill">
 
@@ -303,19 +293,23 @@
                                 Select an option
                             </option>
 
-                            <option>
+                            <option value="New Residential Home Build">
                                 New Residential Home Build
                             </option>
 
-                            <option>
+                            <option value="Home Design">
                                 Home Design
                             </option>
 
-                            <option>
+                            <option value="Design + Build">
                                 Design + Build
                             </option>
 
-                            <option>
+                            <option value="Civil Works / Subdivision">
+                                Civil Works / Subdivision
+                            </option>
+
+                            <option value="Not Sure Yet">
                                 Not Sure Yet
                             </option>
 
@@ -340,27 +334,27 @@
                                 Select a range
                             </option>
 
-                            <option>
+                            <option value="Under $400,000">
                                 Under $400,000
                             </option>
 
-                            <option>
+                            <option value="$400,000 - $600,000">
                                 $400,000 - $600,000
                             </option>
 
-                            <option>
+                            <option value="$600,000 - $800,000">
                                 $600,000 - $800,000
                             </option>
 
-                            <option>
+                            <option value="$800,000 - $1,000,000">
                                 $800,000 - $1,000,000
                             </option>
 
-                            <option>
+                            <option value="$1,000,000+">
                                 $1,000,000+
                             </option>
 
-                            <option>
+                            <option value="Not Sure Yet">
                                 Not Sure Yet
                             </option>
 
@@ -385,27 +379,27 @@
                                 Select an option
                             </option>
 
-                            <option>
+                            <option value="As Soon As Possible">
                                 As Soon As Possible
                             </option>
 
-                            <option>
+                            <option value="Within 3 Months">
                                 Within 3 Months
                             </option>
 
-                            <option>
+                            <option value="3 - 6 Months">
                                 3 - 6 Months
                             </option>
 
-                            <option>
+                            <option value="6 - 12 Months">
                                 6 - 12 Months
                             </option>
 
-                            <option>
+                            <option value="12+ Months">
                                 12+ Months
                             </option>
 
-                            <option>
+                            <option value="Just Researching">
                                 Just Researching
                             </option>
 
@@ -414,32 +408,40 @@
                     </div>
 
 
-                    <!-- LAND STATUS -->
+                    <!-- LAND / SITE STATUS -->
 
                     <div class="field">
 
                         <label for="land">
-                            Do You Own Land?
+                            Land / Site Status
                         </label>
 
                         <select
                             id="land"
-                            name="Land Status">
+                            name="Land / Site Status">
 
                             <option value="">
                                 Select an option
                             </option>
 
-                            <option>
-                                Yes
+                            <option value="Own the Site">
+                                Own the Site
                             </option>
 
-                            <option>
-                                No
-                            </option>
-
-                            <option>
+                            <option value="Currently Purchasing">
                                 Currently Purchasing
+                            </option>
+
+                            <option value="Project / Development Site">
+                                Project / Development Site
+                            </option>
+
+                            <option value="Not Yet Secured">
+                                Not Yet Secured
+                            </option>
+
+                            <option value="Not Applicable">
+                                Not Applicable
                             </option>
 
                         </select>
@@ -447,7 +449,7 @@
                     </div>
 
 
-                    <!-- MESSAGE -->
+                    <!-- PROJECT DETAILS -->
 
                     <div class="field full">
 
@@ -459,7 +461,7 @@
                             id="message"
                             name="Project Details"
                             required
-                            placeholder="Tell us about your ideas, block, preferred home style, number of bedrooms, or anything else you think is important."></textarea>
+                            placeholder="Tell us about your project, site, proposed works, available plans and any relevant requirements. For a new home, you can also include your preferred style, bedrooms and design ideas."></textarea>
 
                     </div>
 
@@ -469,7 +471,7 @@
                     <div class="field full">
 
                         <label for="plans">
-                            Upload Plans or Documents
+                            Upload Plans / Documents
                         </label>
 
                         <input
@@ -518,9 +520,11 @@
                 Simple from the start.
             </h2>
 
+
             <div class="cards">
 
                 <article class="card reveal">
+
                     <div class="pad">
 
                         <h3>
@@ -528,15 +532,17 @@
                         </h3>
 
                         <p>
-                            Share the basics of your project using the
-                            free quote form above.
+                            Share the basics of your residential or civil
+                            project using the free quote form above.
                         </p>
 
                     </div>
+
                 </article>
 
 
                 <article class="card reveal">
+
                     <div class="pad">
 
                         <h3>
@@ -545,26 +551,31 @@
 
                         <p>
                             We’ll review your enquiry and contact you to
-                            discuss your project in more detail.
+                            discuss the project, site and requirements in
+                            more detail.
                         </p>
 
                     </div>
+
                 </article>
 
 
                 <article class="card reveal">
+
                     <div class="pad">
 
                         <h3>
-                            03 · Start Planning
+                            03 · Plan the Next Steps
                         </h3>
 
                         <p>
-                            If the project is a good fit, we can begin
-                            discussing your design, site, budget and next steps.
+                            If the project is a good fit, we can discuss
+                            the scope, available plans, timing and next
+                            steps.
                         </p>
 
                     </div>
+
                 </article>
 
             </div>
@@ -582,6 +593,7 @@
 
             <div class="footgrid">
 
+
                 <div>
 
                     <img
@@ -589,8 +601,9 @@
                         alt="SandhuDesignHome">
 
                     <p>
-                        Thoughtfully designed, quality residential homes
-                        for Sydney families. From first concept to final handover.
+                        Residential construction, home design and civil
+                        works delivered with a focus on flexibility,
+                        quality workmanship and practical project delivery.
                     </p>
 
                 </div>
@@ -639,7 +652,9 @@
                         href="https://www.instagram.com/sandhudesignhome/"
                         target="_blank"
                         rel="noopener">
+
                         @sandhudesignhome
+
                     </a>
 
                     <p>
