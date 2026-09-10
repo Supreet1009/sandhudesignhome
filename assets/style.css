@@ -960,3 +960,467 @@ p {
     }
 
 }
+/* =========================================
+   CIVIL WORKS SERVICE SECTION
+========================================= */
+
+.service-feature {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 64px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.service-feature-copy {
+    max-width: 620px;
+}
+
+.service-feature-copy .lead {
+    margin-bottom: 18px;
+}
+
+.service-feature-copy p {
+    margin-bottom: 18px;
+}
+
+.service-feature-copy .btn {
+    margin-top: 12px;
+}
+
+.service-feature-image {
+    overflow: hidden;
+    min-height: 500px;
+    background: var(--soft);
+}
+
+.service-feature-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================================
+   CIVIL SERVICE CAPABILITY CARDS
+========================================= */
+
+.civil-services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 60px;
+}
+
+.civil-service {
+    border-top: 1px solid var(--border);
+    padding: 26px 22px 30px 0;
+}
+
+.civil-service > span {
+    display: block;
+    color: var(--gold-dark);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    margin-bottom: 20px;
+}
+
+.civil-service h3 {
+    margin-bottom: 14px;
+    color: var(--navy);
+}
+
+.civil-service p {
+    color: var(--muted);
+    margin: 0;
+}
+
+
+/* =========================================
+   LISAROW CIVIL PROJECT
+========================================= */
+
+.civil-project {
+    background: var(--navy-dark);
+    color: var(--white);
+}
+
+.civil-project .eyebrow {
+    color: var(--gold-light);
+}
+
+.civil-project h2 {
+    color: var(--white);
+}
+
+.civil-project .project-location {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.civil-project p {
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.civil-project .lead {
+    color: var(--white);
+}
+
+.civil-project .project-stats {
+    border-top-color: rgba(255, 255, 255, 0.18);
+    border-bottom-color: rgba(255, 255, 255, 0.18);
+}
+
+.civil-project .project-stats div {
+    border-right-color: rgba(255, 255, 255, 0.18);
+}
+
+.civil-project .project-stats strong {
+    color: var(--white);
+}
+
+.civil-project .project-stats span {
+    color: rgba(255, 255, 255, 0.58);
+}
+
+
+/* =========================================
+   LISAROW FEATURE IMAGE
+========================================= */
+
+.civil-feature-image {
+    position: relative;
+    margin-top: 55px;
+    min-height: 560px;
+    overflow: hidden;
+}
+
+.civil-feature-image img {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+    display: block;
+}
+
+.civil-feature-label {
+    position: absolute;
+    left: 28px;
+    bottom: 28px;
+    background: rgba(3, 30, 51, 0.92);
+    padding: 18px 24px;
+    min-width: 230px;
+}
+
+.civil-feature-label span {
+    display: block;
+    color: var(--gold-light);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.75rem;
+    margin-bottom: 6px;
+}
+
+.civil-feature-label strong {
+    color: var(--white);
+    font-size: 1.15rem;
+}
+
+
+/* =========================================
+   LISAROW IMAGE GALLERY
+========================================= */
+
+.civil-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 46px;
+}
+
+.civil-gallery figure {
+    margin: 0;
+    overflow: hidden;
+    min-height: 380px;
+    background: var(--navy);
+}
+
+.civil-gallery img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.45s ease;
+}
+
+.civil-gallery figure:hover img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================
+   STANDARD PROJECT GALLERY IMPROVEMENTS
+   INCLUDING LISAROW
+========================================= */
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 48px;
+}
+
+.portfolio-gallery figure {
+    margin: 0;
+    overflow: hidden;
+    background: var(--soft);
+    min-height: 360px;
+}
+
+.portfolio-gallery .portfolio-main {
+    grid-column: 1 / -1;
+    min-height: 560px;
+}
+
+.portfolio-gallery img {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    transition: transform 0.45s ease;
+}
+
+.portfolio-gallery .portfolio-main img {
+    height: 560px;
+}
+
+.portfolio-gallery figure:hover img {
+    transform: scale(1.02);
+}
+
+
+/* =========================================
+   PROJECT DETAILS
+========================================= */
+
+.project-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 48px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.project-stats div {
+    padding: 24px 22px;
+    border-right: 1px solid var(--border);
+}
+
+.project-stats div:last-child {
+    border-right: none;
+}
+
+.project-stats strong {
+    display: block;
+    color: var(--navy);
+    font-size: 1rem;
+    margin-bottom: 7px;
+}
+
+.project-stats span {
+    display: block;
+    color: var(--muted);
+    font-size: 0.83rem;
+}
+
+
+/* =========================================
+   PROJECT LOCATION
+========================================= */
+
+.project-location {
+    margin-top: 14px;
+    color: var(--muted);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .service-feature {
+        grid-template-columns: 1fr;
+        gap: 38px;
+    }
+
+    .service-feature-image,
+    .service-feature-image img {
+        min-height: 440px;
+    }
+
+    .civil-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-stats div:nth-child(2) {
+        border-right: none;
+    }
+
+    .project-stats div:nth-child(-n+2) {
+        border-bottom: 1px solid var(--border);
+    }
+
+    .civil-project .project-stats div:nth-child(-n+2) {
+        border-bottom-color: rgba(255, 255, 255, 0.18);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 780px) {
+
+    .service-feature {
+        gap: 28px;
+    }
+
+    .service-feature-image,
+    .service-feature-image img {
+        min-height: 330px;
+        height: 330px;
+    }
+
+    .civil-services-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-top: 40px;
+    }
+
+    .civil-service {
+        padding: 24px 0;
+    }
+
+    .civil-feature-image {
+        margin-top: 38px;
+        min-height: 360px;
+    }
+
+    .civil-feature-image img {
+        height: 360px;
+    }
+
+    .civil-feature-label {
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+        min-width: 0;
+    }
+
+    .civil-gallery {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 32px;
+    }
+
+    .civil-gallery figure,
+    .civil-gallery img {
+        min-height: 320px;
+        height: 320px;
+    }
+
+    .portfolio-gallery {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 34px;
+    }
+
+    .portfolio-gallery .portfolio-main {
+        grid-column: auto;
+        min-height: 360px;
+    }
+
+    .portfolio-gallery figure {
+        min-height: 320px;
+    }
+
+    .portfolio-gallery img {
+        height: 320px;
+    }
+
+    .portfolio-gallery .portfolio-main img {
+        height: 360px;
+    }
+
+    .project-stats {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 34px;
+    }
+
+    .project-stats div {
+        padding: 20px 16px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 430px) {
+
+    .project-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .project-stats div {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .project-stats div:last-child {
+        border-bottom: none;
+    }
+
+    .civil-project .project-stats div {
+        border-bottom-color: rgba(255, 255, 255, 0.18);
+    }
+
+    .civil-feature-image,
+    .civil-feature-image img {
+        min-height: 300px;
+        height: 300px;
+    }
+
+    .civil-gallery figure,
+    .civil-gallery img {
+        min-height: 280px;
+        height: 280px;
+    }
+
+    .portfolio-gallery figure,
+    .portfolio-gallery img {
+        min-height: 280px;
+        height: 280px;
+    }
+
+    .portfolio-gallery .portfolio-main,
+    .portfolio-gallery .portfolio-main img {
+        min-height: 320px;
+        height: 320px;
+    }
+
+}
